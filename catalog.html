@@ -1,113 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catalog | Tico-Print</title>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Tico-Print</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at top left, #b2f7ef, #ffdde1, #ff9a9e, #fbc2eb, #f6f7d7);
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background-color: #a2d2ff;
-      color: #333;
-      padding: 20px 0;
-    }
-    h1 {
-      margin: 0;
-      font-size: 3em;
-      font-family: 'Brush Script MT', cursive;
-      color: #5d6d99;
-      letter-spacing: 1px;
-    }
-    nav {
-      margin-bottom: 20px;
-    }
-    nav a {
-      color: #555;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .catalogo {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      background-color: #f9f9f9;
     }
     .producto {
-      background-color: white;
+      text-align: center;
+      background: white;
+      padding: 1em;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 250px;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-    .producto:hover {
-      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
     }
     .producto img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
-    .producto h3 {
-      margin: 10px 0 5px;
-      color: #5d6d99;
-    }
-    .producto p {
-      font-size: 0.95em;
-      padding: 0 15px 15px;
-    }
-    footer {
-      background-color: #6a89cc;
-      color: white;
-      padding: 10px;
-      font-size: 0.9em;
+    h3 {
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="catalog.html">Catalog</a>
-    <a href="about.html">About</a>
-  </nav>
-  <header>
-    <h1>Product Catalog</h1>
-  </header>
-  <section class="catalogo">
-    <div class="producto">
-      <div class="producto">
-  <img src="taza sublimada.png" alt="Taza personalizada Tico-Print" />
-  <h3>Custom Mug</h3>
-  <p>Unique ceramic designs in high-quality material. From $8.</p>
-</div>
-    <div class="producto">
-      <img src="https://source.unsplash.com/300x300/?tshirt,custom" alt="Camiseta personalizada" />
-      <h3>Custom T-shirt</h3>
-      <p>Comfortable garments with long-lasting print. From $12.</p>
-    </div>
-    <div class="producto">
-      <img src="https://source.unsplash.com/300x300/?cap,custom" alt="Gorra sublimada" />
-      <h3>Printed Cap</h3>
-      <p>Perfect for events and promotions. From $10.</p>
-    </div>
-    <div class="producto">
-      <img src="https://source.unsplash.com/300x300/?keychain,custom" alt="Llavero personalizado" />
-      <h3>Custom Keychain</h3>
-      <p>Small details that make a big impact. From $5.</p>
-    </div>
-  </section>
-  <footer>
-    &copy; 2025 Tico-Print. All rights reserved.
-  </footer>
+  <div class="producto">
+    <img src="taza sublimada.png" alt="Taza personalizada Tico-Print" />
+    <h3>Taza Personalizada</h3>
+    <p>Diseños únicos en cerámica de alta calidad. Desde $8.</p>
+  </div>
 </body>
 </html>
