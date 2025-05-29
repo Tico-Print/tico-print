@@ -73,43 +73,37 @@
       border-radius: 0.5rem;
       background: #ddd;
     }
-    .desc-es { display: none; font-size: 0.8em; color: #555; }
-    .desc-en { font-size: 1em; }
-    .show-es .desc-es { display: block; }
-    .show-es .desc-en { font-size: 0.8em; color: #555; }
-    .show-en .desc-en { font-size: 1em; }
-    .show-en .desc-es { font-size: 0.8em; color: #555; }
-
-    .social {
-      text-align: center;
-      margin-top: 2rem;
+    .desc-es {
+      display: none;
+      font-size: 0.8em;
+      color: #555;
     }
-    .social a {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      color: white;
-      font-size: 1.2em;
-      padding: 10px;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      line-height: 20px;
-      transition: transform 0.3s;
+    .desc-en {
+      font-size: 1em;
     }
-    .social a:hover {
-      transform: scale(1.2);
+    .show-es .desc-es {
+      display: block;
     }
-    .youtube { background: #FF0000; }
-    .facebook { background: #3b5998; }
-    .instagram { background: #E1306C; }
-    .tiktok { background: #000000; }
-    .whatsapp { background: #25D366; }
-
+    .show-es .desc-en {
+      font-size: 0.8em;
+      color: #555;
+    }
+    .show-en .desc-en {
+      font-size: 1em;
+    }
+    .show-en .desc-es {
+      font-size: 0.8em;
+      color: #555;
+    }
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -125,62 +119,66 @@
     <button onclick="document.body.className='show-en'">English</button>
   </div>
   <div class="grid">
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="T-shirt" />
-      <div class="desc-en">Custom t-shirts</div>
-      <div class="desc-es">Camisetas personalizadas</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="T-shirt" />
+      <div class="desc-en">Custom T-shirts.</div>
+      <div class="desc-es">Camisetas personalizadas.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Mug" />
-      <div class="desc-en">Sublimated mugs</div>
-      <div class="desc-es">Tazas sublimadas</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Mug" />
+      <div class="desc-en">Sublimated ceramic mugs.</div>
+      <div class="desc-es">Jarras de cerámica sublimadas.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Cap" />
-      <div class="desc-en">Custom caps</div>
-      <div class="desc-es">Gorras personalizadas</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Cap" />
+      <div class="desc-en">Caps with custom designs.</div>
+      <div class="desc-es">Gorras con diseños personalizados.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Keychain" />
-      <div class="desc-en">Creative keychains</div>
-      <div class="desc-es">Llaveros creativos</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Keychain" />
+      <div class="desc-en">Unique and creative keychains.</div>
+      <div class="desc-es">Llaveros únicos y creativos.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Photo Frame" />
-      <div class="desc-en">Personalized photo frames</div>
-      <div class="desc-es">Portarretratos personalizados</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Photo Frame" />
+      <div class="desc-en">Personalized photo frames.</div>
+      <div class="desc-es">Portarretratos personalizados.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Puzzle" />
-      <div class="desc-en">Puzzles with your images</div>
-      <div class="desc-es">Rompecabezas con tus imágenes</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Puzzle" />
+      <div class="desc-en">Puzzles with your favorite images.</div>
+      <div class="desc-es">Rompecabezas con tus imágenes favoritas.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Polo Shirt" />
-      <div class="desc-en">Sublimated polo shirts</div>
-      <div class="desc-es">Camisas polo sublimadas</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Polo Shirt" />
+      <div class="desc-en">Sublimated polo shirts with elegance.</div>
+      <div class="desc-es">Camisas polo sublimadas con elegancia.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Cushion" />
-      <div class="desc-en">Custom cushions</div>
-      <div class="desc-es">Cojines personalizados</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Cushion" />
+      <div class="desc-en">Comfortable and personalized cushions.</div>
+      <div class="desc-es">Cojines cómodos y personalizados.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Shopping Bag" />
-      <div class="desc-en">Reusable shopping bags</div>
-      <div class="desc-es">Bolsas reutilizables</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Shopping Bag" />
+      <div class="desc-en">Reusable bags with style.</div>
+      <div class="desc-es">Bolsas reutilizables con estilo.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Mouse Pad" />
-      <div class="desc-en">Custom mouse pads</div>
-      <div class="desc-es">Mouse pads personalizados</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Mouse Pad" />
+      <div class="desc-en">Custom mouse pads for your desk.</div>
+      <div class="desc-es">Mouse pads personalizados para tu escritorio.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="Phone Case" />
-      <div class="desc-en">Phone cases with designs</div>
-      <div class="desc-es">Fundas de teléfono personalizadas</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Phone Case" />
+      <div class="desc-en">Phone cases with unique designs.</div>
+      <div class="desc-es">Fundas para teléfonos con diseños únicos.</div>
     </div>
-    <div class="item"><img src="ruta/a/la/imagen.jpg" alt="And more" />
-      <div class="desc-en">And much more!</div>
-      <div class="desc-es">¡Y mucho más!</div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="More Items" />
+      <div class="desc-en">And much more...</div>
+      <div class="desc-es">Y mucho más...</div>
     </div>
-  </div>
-
-  <div class="social">
-    <a href="#" class="youtube" title="YouTube">Y</a>
-    <a href="#" class="facebook" title="Facebook">F</a>
-    <a href="#" class="instagram" title="Instagram">I</a>
-    <a href="#" class="tiktok" title="TikTok">T</a>
-    <a href="#" class="whatsapp" title="WhatsApp">W</a>
   </div>
 </body>
 </html>
