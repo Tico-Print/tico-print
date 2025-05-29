@@ -6,17 +6,45 @@
   <title>Catálogo Tico-Print</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 2rem;
-      background: #f0f0f0;
+      background: radial-gradient(circle at top left, #b2f7ef, #ffdde1, #ff9a9e, #fbc2eb, #f6f7d7);
     }
     h1 {
       text-align: center;
+      color: #5d6d99;
+      font-family: 'Brush Script MT', cursive;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      background-color: #dbe9f4;
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+    nav a:hover {
+      background-color: #bcd4f2;
     }
     .switch-lang {
       margin: 1rem auto;
       text-align: center;
+    }
+    .switch-lang button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #6a89cc;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
     }
     .grid {
       display: grid;
@@ -27,12 +55,15 @@
       background: white;
       padding: 1rem;
       border-radius: 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       text-align: center;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
     }
     .item:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     }
     .item img {
       width: 100%;
@@ -63,9 +94,24 @@
       font-size: 0.8em;
       color: #555;
     }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body class="show-es">
+  <nav>
+    <a href="index.html">Home / Inicio</a>
+    <a href="about.html">About / Acerca</a>
+    <a href="contact.html">Contact / Contacto</a>
+  </nav>
   <h1>Catalog / Catálogo</h1>
   <div class="switch-lang">
     <button onclick="document.body.className='show-es'">Español</button>
