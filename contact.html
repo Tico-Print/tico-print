@@ -4,107 +4,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto | Tico-Print</title>
+  <title>Contacto / Contact</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at top left, #b2f7ef, #ffdde1, #ff9a9e, #fbc2eb, #f6f7d7);
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background-color: #a2d2ff;
-      padding: 20px 0;
-    }
-    header h1 {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 3em;
       margin: 0;
+      padding: 2rem;
+      background: radial-gradient(circle at top left, #c2f0f7, #ffdde1, #fbc2eb, #f6f7d7);
+    }
+    h1 {
+      text-align: center;
       color: #5d6d99;
+      font-family: 'Comic Sans MS', cursive;
     }
     nav {
-      margin: 20px 0;
+      text-align: center;
+      margin-bottom: 2rem;
     }
     nav a {
-      color: #555;
       margin: 0 15px;
       text-decoration: none;
+      color: #444;
       font-weight: bold;
+      background-color: #dbe9f4;
+      padding: 10px 15px;
+      border-radius: 10px;
     }
-    .content {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
+    nav a:hover {
+      background-color: #bcd4f2;
     }
-    .email {
+    .contact-info {
+      text-align: center;
       font-size: 1.2em;
-      margin: 20px 0;
+      margin: 2rem 0;
     }
-    .message {
-      font-size: 1.1em;
-      margin-bottom: 30px;
-    }
-    .social-icons {
+    .social-media {
       display: flex;
       justify-content: center;
       gap: 20px;
-      flex-wrap: wrap;
+      margin-top: 1rem;
     }
-    .icon {
+    .social-icon {
       width: 50px;
       height: 50px;
-      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #6a89cc;
+      border-radius: 50%;
+      background-color: #4267B2;
       color: white;
       text-decoration: none;
-      transition: transform 0.3s, background-color 0.3s;
-      font-size: 1.5em;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
-    .icon:hover {
+    .social-icon:hover {
       transform: scale(1.2);
-      background-color: #4e6eaa;
+      background-color: #2d4373;
     }
-    footer {
-      margin-top: 30px;
-      padding: 10px;
-      background-color: #6a89cc;
-      color: white;
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9em;
+      color: #444;
     }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Contacto / Contact</h1>
-  </header>
   <nav>
     <a href="index.html">Inicio / Home</a>
     <a href="catalog.html">Catálogo / Catalog</a>
     <a href="about.html">Acerca / About</a>
+    <a href="contact.html">Contacto / Contact</a>
   </nav>
-  <div class="content">
-    <div class="email">
-      <strong>Email:</strong> info@tico-print.com
-    </div>
-    <div class="message">
-      Síguenos en nuestras redes sociales para más ideas y novedades. <br/>
-      Follow us on our social media for more ideas and news.
-    </div>
-    <div class="social-icons">
-      <a class="icon" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a class="icon" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a class="icon" href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
-      <a class="icon" href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a class="icon" href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+  <h1>Contacto / Contact</h1>
+  <div class="contact-info">
+    <p><strong>Email:</strong> info@tico-print.com</p>
+    <p>Síguenos en nuestras redes sociales para más ideas y novedades.<br/>Follow us on our social media for more ideas and news.</p>
+    <div class="social-media">
+      <a class="social-icon" href="#" style="background-color:#3b5998;"><i class="fab fa-facebook-f"></i></a>
+      <a class="social-icon" href="#" style="background-color:#E4405F;"><i class="fab fa-instagram"></i></a>
+      <a class="social-icon" href="#" style="background-color:#25D366;"><i class="fab fa-whatsapp"></i></a>
+      <a class="social-icon" href="#" style="background-color:#FF0000;"><i class="fab fa-youtube"></i></a>
+      <a class="social-icon" href="#" style="background-color:#000000;"><i class="fab fa-tiktok"></i></a>
     </div>
   </div>
-  <footer>
+  <div class="footer">
     &copy; 2025 Tico-Print
-  </footer>
+  </div>
 </body>
 </html>

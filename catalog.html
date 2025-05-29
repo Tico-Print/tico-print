@@ -33,20 +33,6 @@
     nav a:hover {
       background-color: #bcd4f2;
     }
-    .switch-lang {
-      margin: 1rem auto;
-      text-align: center;
-    }
-    .switch-lang button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      border: none;
-      background-color: #6a89cc;
-      color: white;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -73,111 +59,39 @@
       border-radius: 0.5rem;
       background: #ddd;
     }
-    .desc-es {
-      display: none;
-      font-size: 0.8em;
-      color: #555;
-    }
-    .desc-en {
+    .desc-es, .desc-en {
       font-size: 1em;
-    }
-    .show-es .desc-es {
-      display: block;
-    }
-    .show-es .desc-en {
-      font-size: 0.8em;
-      color: #555;
-    }
-    .show-en .desc-en {
-      font-size: 1em;
-    }
-    .show-en .desc-es {
-      font-size: 0.8em;
       color: #555;
     }
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
-<body class="show-es">
+<body>
   <nav>
-    <a href="index.html">Home / Inicio</a>
-    <a href="about.html">About / Acerca</a>
-    <a href="contact.html">Contact / Contacto</a>
+    <a href="index.html">Inicio / Home</a>
+    <a href="catalog.html">Catálogo / Catalog</a>
+    <a href="about.html">Acerca / About</a>
+    <a href="contact.html">Contacto / Contact</a>
   </nav>
   <h1>Catalog / Catálogo</h1>
-  <div class="switch-lang">
-    <button onclick="document.body.className='show-es'">Español</button>
-    <button onclick="document.body.className='show-en'">English</button>
-  </div>
   <div class="grid">
     <div class="item">
       <img src="ruta/a/la/imagen.jpg" alt="T-shirt" />
-      <div class="desc-en">Custom T-shirts.</div>
-      <div class="desc-es">Camisetas personalizadas.</div>
+      <div class="desc-en">Custom t-shirts</div>
+      <div class="desc-es">Camisetas personalizadas</div>
     </div>
     <div class="item">
       <img src="ruta/a/la/imagen.jpg" alt="Mug" />
-      <div class="desc-en">Sublimated ceramic mugs.</div>
-      <div class="desc-es">Jarras de cerámica sublimadas.</div>
+      <div class="desc-en">Sublimated ceramic mugs</div>
+      <div class="desc-es">Jarras de cerámica sublimadas</div>
     </div>
     <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Cap" />
-      <div class="desc-en">Caps with custom designs.</div>
-      <div class="desc-es">Gorras con diseños personalizados.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Keychain" />
-      <div class="desc-en">Unique and creative keychains.</div>
-      <div class="desc-es">Llaveros únicos y creativos.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Photo Frame" />
-      <div class="desc-en">Personalized photo frames.</div>
-      <div class="desc-es">Portarretratos personalizados.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Puzzle" />
-      <div class="desc-en">Puzzles with your favorite images.</div>
-      <div class="desc-es">Rompecabezas con tus imágenes favoritas.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Polo Shirt" />
-      <div class="desc-en">Sublimated polo shirts with elegance.</div>
-      <div class="desc-es">Camisas polo sublimadas con elegancia.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Cushion" />
-      <div class="desc-en">Comfortable and personalized cushions.</div>
-      <div class="desc-es">Cojines cómodos y personalizados.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Shopping Bag" />
-      <div class="desc-en">Reusable bags with style.</div>
-      <div class="desc-es">Bolsas reutilizables con estilo.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Mouse Pad" />
-      <div class="desc-en">Custom mouse pads for your desk.</div>
-      <div class="desc-es">Mouse pads personalizados para tu escritorio.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="Phone Case" />
-      <div class="desc-en">Phone cases with unique designs.</div>
-      <div class="desc-es">Fundas para teléfonos con diseños únicos.</div>
-    </div>
-    <div class="item">
-      <img src="ruta/a/la/imagen.jpg" alt="More Items" />
-      <div class="desc-en">And much more...</div>
-      <div class="desc-es">Y mucho más...</div>
+      <img src="ruta/a/la/imagen.jpg" alt="...etc..." />
+      <div class="desc-en">And much more</div>
+      <div class="desc-es">Y mucho más</div>
     </div>
   </div>
 </body>
