@@ -1,39 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo - Tico-Print</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Tico-Print</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2em;
-      background-color: #f9f9f9;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f0f0f0;
     }
-    .producto {
+    h1 {
       text-align: center;
+    }
+    .switch-lang {
+      margin: 1rem auto;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .item {
       background: white;
-      padding: 1em;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 400px;
-      margin: auto;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
     }
-    .producto img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+    .item:hover {
+      transform: translateY(-5px);
     }
-    h3 {
-      color: #333;
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      background: #ddd;
+    }
+    .desc-es {
+      display: none;
+      font-size: 0.8em;
+      color: #555;
+    }
+    .desc-en {
+      font-size: 1em;
+    }
+    .show-es .desc-es {
+      display: block;
+    }
+    .show-es .desc-en {
+      font-size: 0.8em;
+      color: #555;
+    }
+    .show-en .desc-en {
+      font-size: 1em;
+    }
+    .show-en .desc-es {
+      font-size: 0.8em;
+      color: #555;
     }
   </style>
 </head>
-<body>
-  <div class="producto">
-    <img src="taza sublimada.png" alt="Taza personalizada Tico-Print" />
-    <h3>Taza Personalizada</h3>
-    <p>Diseños únicos en cerámica de alta calidad. Desde $8.</p>
+<body class="show-es">
+  <h1>Catalog / Catálogo</h1>
+  <div class="switch-lang">
+    <button onclick="document.body.className='show-es'">Español</button>
+    <button onclick="document.body.className='show-en'">English</button>
+  </div>
+  <div class="grid">
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="T-shirt" />
+      <div class="desc-en">Custom cotton t-shirts.</div>
+      <div class="desc-es">Camisetas personalizadas de algodón.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Mug" />
+      <div class="desc-en">Sublimated ceramic mugs.</div>
+      <div class="desc-es">Jarras de cerámica sublimadas.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Cap" />
+      <div class="desc-en">Caps with custom designs.</div>
+      <div class="desc-es">Gorras con diseños personalizados.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Keychain" />
+      <div class="desc-en">Unique and creative keychains.</div>
+      <div class="desc-es">Llaveros únicos y creativos.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Photo Frame" />
+      <div class="desc-en">Personalized photo frames.</div>
+      <div class="desc-es">Portarretratos personalizados.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Puzzle" />
+      <div class="desc-en">Puzzles with your favorite images.</div>
+      <div class="desc-es">Rompecabezas con tus imágenes favoritas.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Polo Shirt" />
+      <div class="desc-en">Sublimated polo shirts with elegance.</div>
+      <div class="desc-es">Camisas polo sublimadas con elegancia.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Cushion" />
+      <div class="desc-en">Comfortable and personalized cushions.</div>
+      <div class="desc-es">Cojines cómodos y personalizados.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Shopping Bag" />
+      <div class="desc-en">Reusable bags with style.</div>
+      <div class="desc-es">Bolsas reutilizables con estilo.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Mouse Pad" />
+      <div class="desc-en">Custom mouse pads for your desk.</div>
+      <div class="desc-es">Mouse pads personalizados para tu escritorio.</div>
+    </div>
+    <div class="item">
+      <img src="ruta/a/la/imagen.jpg" alt="Phone Case" />
+      <div class="desc-en">Phone cases with unique designs.</div>
+      <div class="desc-es">Fundas para teléfonos con diseños únicos.</div>
+    </div>
   </div>
 </body>
 </html>
