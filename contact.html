@@ -1,105 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto | Tico-Print</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
       background: radial-gradient(circle at top left, #b2f7ef, #ffdde1, #ff9a9e, #fbc2eb, #f6f7d7);
       color: #333;
       text-align: center;
     }
     header {
-      padding: 20px 0;
       background-color: #a2d2ff;
+      padding: 20px 0;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #5d6d99;
+    header h1 {
       font-family: 'Brush Script MT', cursive;
+      font-size: 3em;
+      margin: 0;
+      color: #5d6d99;
     }
     nav {
-      background-color: #dbe9f4;
-      padding: 10px;
+      margin: 20px 0;
     }
     nav a {
-      color: #333;
+      color: #555;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 8px;
     }
-    nav a:hover {
-      background-color: #bcd4f2;
-    }
-    .container {
-      padding: 40px 20px;
-      max-width: 800px;
+    .content {
+      max-width: 700px;
       margin: auto;
+      padding: 20px;
     }
-    .correo {
+    .email {
       font-size: 1.2em;
       margin: 20px 0;
-      color: #5d6d99;
     }
-    .mensaje {
+    .message {
       font-size: 1.1em;
       margin-bottom: 30px;
     }
-    .redes {
+    .social-icons {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
     }
-    .redes a {
-      text-decoration: none;
-      font-size: 2em;
-      color: #5d6d99;
-      transition: transform 0.3s ease, color 0.3s ease;
-    }
-    .redes a:hover {
-      transform: scale(1.2);
-      color: #6a89cc;
-    }
-    footer {
+    .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #6a89cc;
       color: white;
-      padding: 15px;
-      margin-top: 40px;
+      text-decoration: none;
+      transition: transform 0.3s, background-color 0.3s;
+      font-size: 1.5em;
+    }
+    .icon:hover {
+      transform: scale(1.2);
+      background-color: #4e6eaa;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #6a89cc;
+      color: white;
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="catalog.html">Catálogo</a>
-    <a href="contact.html">Contacto</a>
-  </nav>
   <header>
-    <h1>Contacto</h1>
+    <h1>Contacto / Contact</h1>
   </header>
-  <div class="container">
-    <p class="correo"><strong>Email:</strong> info@tico-print.com</p>
-    <p class="mensaje">
-      ¡Síguenos en nuestras redes sociales para ver nuestras últimas creaciones y promociones especiales!
-    </p>
-    <div class="redes">
-      <a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a>
-      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
-      <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+  <nav>
+    <a href="index.html">Inicio / Home</a>
+    <a href="catalog.html">Catálogo / Catalog</a>
+    <a href="about.html">Acerca / About</a>
+  </nav>
+  <div class="content">
+    <div class="email">
+      <strong>Email:</strong> info@tico-print.com
+    </div>
+    <div class="message">
+      Síguenos en nuestras redes sociales para más ideas y novedades. <br/>
+      Follow us on our social media for more ideas and news.
+    </div>
+    <div class="social-icons">
+      <a class="icon" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a class="icon" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a class="icon" href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a class="icon" href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a class="icon" href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
     </div>
   </div>
   <footer>
-    &copy; 2025 Tico-Print. Todos los derechos reservados.
+    &copy; 2025 Tico-Print
   </footer>
 </body>
 </html>
