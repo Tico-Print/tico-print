@@ -1,49 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tico-Print - Inicio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Tico-Print — Responsive Demo</title>
+
+  <!-- ===== Base styles (inline for quick copy-paste) ===== -->
+  <style>
+    :root {
+      /* Color uniforme tomado del ejemplo anterior */
+      --primary-bg: #f5f7fa;   /* cambia aquí si deseas otro tono */
+      --accent:     #006aff;
+    }
+
+    /* Reset + fondo parejo */
+    *,
+    *::before,
+    *::after { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      height: 100%;            /* asegura que el fondo cubra todo */
+      background: var(--primary-bg);
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.55;
+    }
+
+    /* Contenedor principal para centrar contenido */
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+
+    /* Navegación responsiva */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: var(--accent);
+    }
+    nav a {
+      flex: 1 1 25%;           /* 4 por fila en desktop */
+      min-width: 120px;
+      text-align: center;
+      color: #fff;
+      padding: 14px 0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { background: rgba(255,255,255,0.15); }
+
+    /* Titulares */
+    h1, h2 { margin-top: 0.8rem; }
+
+    /* Responsive ≤600 px: 2 links por fila */
+    @media (max-width: 600px) {
+      nav a { flex: 1 1 50%; }
+    }
+  </style>
 </head>
+
 <body>
+  <!-- ===== Navegación ===== -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="catalog.html">Catalog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">Catalog</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
   </nav>
-  <h1>Welcome to Tico-Print!</h1>
-<p>
-  We're glad you're here. Explore our site and discover unique designs made with love and creativity.  
-  Whether you're looking for custom gifts, inspiration, or just curious, there's something here for you.
-</p>
-<p>
-  Bring your ideas to life—shop Tico-Print today and stand out without limits.
-</p>
 
-  <p>Custom Sublimation Items.</p>
-  <img src="images/vasosllaveroscamiseta.png" alt="Welcome" width="400">
-  
-  <p>
-  Don't forget to follow us on social media to stay updated with our latest creations and offers.
-</p>
+  <!-- ===== Contenido ===== -->
+  <div class="wrapper">
+    <h1>Welcome to Tico-Print</h1>
+    <p>
+      This is a quick demo page with a uniform background color that adapts seamlessly
+      to any screen size — desktop, tablet or mobile.
+    </p>
 
-<!-- Redes sociales con íconos -->
-<div style="margin-top: 20px;">
-  <a href="https://www.facebook.com/tuusuario" target="_blank" style="margin-right: 10px;">
-    <img src="images/Facebook_f_logo_(2019).svg.png" alt="Facebook" width="30">
-  </a>
-  <a href="https://www.instagram.com/tuusuario" target="_blank" style="margin-right: 10px;">
-    <img src="images/instagram-application-logo.png" alt="Instagram" width="30">
-  </a>
-  <a href="https://images/tiktok.png" target="_blank" style="margin-right: 10px;">
-    <img src="images/tiktok.png" alt="TikTok" width="30">
-  </a>
-  <a href="https://wa.me/1234567890" target="_blank">
-    <img src="images/10464266.png" alt="WhatsApp" width="30">
-  </a>
-</div>
-
+    <h2>Why this works</h2>
+    <ul>
+      <li><strong>100 % background coverage:</strong> <code>html, body { height: 100%; background: … }</code></li>
+      <li><strong>Fluid layout:</strong> <code>max-width</code> container and flexible nav links.</li>
+      <li><strong>Mobile-first breakpoints:</strong> simple media query at <code>600 px</code>.</li>
+    </ul>
+  </div>
 </body>
 </html>
