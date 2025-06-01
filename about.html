@@ -16,4 +16,61 @@
   <h1>About Us</h1>
   <p>We are experts in sublimated products.</p>
 </body>
+  <!-- =========  Tico-Print.com  |  About Us  (English + on-demand translation)  ========= -->
+<section id="about" style="max-width:680px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;line-height:1.5;">
+  <h2 style="text-align:center;color:#1a1a1a;">About&nbsp;Us</h2>
+
+  <p>
+    <strong>Tico-Print.com</strong> blends Costa Rican passion with U.S. efficiency to deliver top-quality, customized
+    products that tell your unique story.
+  </p>
+
+  <ul style="padding-left:1.2rem;">
+    <li><b>Corporate merchandise:</b> tees, caps, polos and promo items to boost your brand.</li>
+    <li><b>Personalized gifts:</b> mugs, cushions, puzzles, keychains &amp; more—made to impress.</li>
+    <li><b>Tailored production:</b> small runs for entrepreneurs, large orders for enterprises.</li>
+  </ul>
+
+  <h3 style="margin-top:1.2rem;">Our Commitment</h3>
+  <ol style="padding-left:1.2rem;">
+    <li><b>Professional quality&nbsp;</b>— premium inks &amp; materials for vibrant, long-lasting color.</li>
+    <li><b>Fast U.S. shipping&nbsp;</b>— stateside production means quick turnaround nationwide.</li>
+    <li><b>“Pura vida” service&nbsp;</b>— friendly, step-by-step guidance on every project.</li>
+    <li><b>Eco-awareness&nbsp;</b>— reusable options and responsible processes.</li>
+  </ol>
+
+  <p style="margin-top:1.2rem;">
+    Whether you represent a major company or just want a one-of-a-kind gift, <strong>Tico-Print.com</strong> turns your
+    ideas into products that speak louder than words.
+  </p>
+
+  <blockquote style="font-style:italic;color:#555;margin:1rem 0;text-align:center;">
+    Imagine, design, print… and let your style do the talking.
+  </blockquote>
+</section>
+
+<!-- ===  Translate Button & Google Website Translator  =============================== -->
+<div style="text-align:center;margin-top:1.5rem;">
+  <button id="translate-btn" style="padding:8px 18px;font-size:15px;border:none;border-radius:4px;
+          background:#006aff;color:#fff;cursor:pointer;">
+    🌐 Translate
+  </button>
+  <div id="google_translate_element" style="display:none;margin-top:0.8rem;"></div>
+</div>
+
+<script>
+  // Show / hide the translator dropdown on button click
+  document.getElementById('translate-btn').addEventListener('click', () => {
+    const gt = document.getElementById('google_translate_element');
+    gt.style.display = (gt.style.display === 'none') ? 'inline-block' : 'none';
+  });
+  // Google Translate callback
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+  }
+</script>
+<!-- Load Google Website Translator -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- ================================================================================ -->
+
 </html>
